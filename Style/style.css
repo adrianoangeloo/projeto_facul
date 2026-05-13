@@ -252,9 +252,6 @@ footer ul {
 }
 
 
-/*Abaixo, responsividade feita total pelo Chatgpt para teste*/
-
-/* Tablet */
 @media (max-width: 1024px) {
   nav ul {
     gap: 50px;
@@ -266,49 +263,59 @@ footer ul {
   }
 }
 
-/* Celular */
 @media (max-width: 768px) {
-  header {
-    flex-wrap: nowrap;
+header {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px 15px;
-    gap: 10px;
-  }
+    padding: 10px;
+    gap: 8px;
+}
 
-  h1 {
-    font-size: 18px;
+h1 {
+    font-size: 16px;
+    margin: 0;
     white-space: nowrap;
-  }
+}
 
   nav {
     flex: 1;
+    min-width: 0;
   }
 
   nav ul {
-    flex-direction: row;
-    gap: 12px;
+    display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
   }
 
   nav a {
-    font-size: 12px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .buscar {
+    display: block;
   }
 
   .buscar input {
-    max-width: 90px;
-    font-size: 12px;
-    padding: 4px 6px;
+    width: 70px;
+    max-width: 70px;
+    font-size: 10px;
+    padding: 3px 5px;
+    margin: 0;
   }
 
   .carrinho a,
   .perfil a {
-    font-size: 18px;
-    padding: 2px;
+    font-size: 16px;
+    padding: 0;
   }
 
   .cp {
-    width: 20px;
+    width: 18px;
   }
 
   .produtos {
